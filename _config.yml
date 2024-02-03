@@ -9,11 +9,11 @@ url:                "https://khadkakrishna.github.io"
 twitter_username:   
 github_username:    khadkakrishna
 facebook_username:  
-instagram_username: wanderwithkrish
+instagram_username: 
 linkedin_username:  kkhadka
 
 # Add your google-analytics ID here to activate google analytics
-google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+google_analytics:   G-QS9Q0J88B3 # out your google-analytics code
 
 # Build settings
 markdown:           kramdown
