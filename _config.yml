@@ -13,7 +13,7 @@ instagram_username:
 linkedin_username:  kkhadka
 
 # Add your google-analytics ID here to activate google analytics
-google_analytics:   G-QS9Q0J88B3 # out your google-analytics code
+google_analytics:   G-TCSP021670 # out your google-analytics code
 
 # Build settings
 markdown:           kramdown
@@ -23,3 +23,5 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+
+highlighter: rouge
