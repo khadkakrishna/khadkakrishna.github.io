@@ -87,7 +87,7 @@ $rfs-breakpoint-unit-cache: unit($rfs-breakpoint);
 
     // Set default font-size
     @if $rfs-font-size-unit == rem {
-      $rfs-static: #{calc($fs / $rfs-rem-value)}rem#{$rfs-suffix};
+      $rfs-static: #{$fs / $rfs-rem-value}rem#{$rfs-suffix};
     }
     @else if $rfs-font-size-unit == px {
       $rfs-static: #{$fs}px#{$rfs-suffix};
