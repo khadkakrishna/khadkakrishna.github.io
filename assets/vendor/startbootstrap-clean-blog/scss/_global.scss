@@ -53,18 +53,6 @@ blockquote {
     border-bottom-left-radius: 5px;
 }
 
-::-moz-selection {
-    color: $white;
-    background: $primary;
-    text-shadow: none;
-}
-
-::selection {
-    color: $white;
-    background: $primary;
-    text-shadow: none;
-}
-
 img::selection {
     color: $white;
     background: transparent;
