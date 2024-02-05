@@ -104,7 +104,7 @@
     left: 50%;
     display: block;
     width: $popover-arrow-width;
-    margin-left: -calc(calc($popover-arrow-width / 2));
+    margin-left: -1*(calc(calc($popover-arrow-width / 2)));
     content: "";
     border-bottom: $popover-border-width solid $popover-header-bg;
   }
