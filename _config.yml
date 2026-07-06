@@ -1,27 +1,24 @@
-title:              Krishna Khadka
-email:              krishnakhadka2802@gmail.com
-description:        I'm a Data Engineer
-author:             Krishna Khadka
-baseurl:            ""
-url:                "https://khadkakrishna.github.io"
+title: Krishna Khadka
+email: krishnakhadka2802@gmail.com
+description: Notes on data engineering, AI, and the systems I build.
+author: Krishna Khadka
+baseurl: ""
+url: "https://khadkakrishna.github.io"
 
-# Social Profiles
-twitter_username:   
-github_username:    khadkakrishna
-facebook_username:  
-instagram_username: 
-linkedin_username:  kkhadka
+twitter_username:
+github_username: khadkakrishna
+facebook_username:
+instagram_username:
+linkedin_username: kkhadka
 
-# Add your google-analytics ID here to activate google analytics
-google_analytics:   G-TCSP021670 # out your google-analytics code
+google_analytics: G-TCSP021670
 
-# Build settings
-markdown:           kramdown
-paginate:           4
-paginate_path:      "/posts/page:num/"
+markdown: kramdown
+paginate: 5
+paginate_path: "/posts/page:num/"
 plugins:
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+  - jekyll-sitemap
 
 highlighter: rouge
