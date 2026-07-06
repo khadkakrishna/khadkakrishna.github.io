@@ -24,6 +24,17 @@ body {
   color: var(--text);
 }
 
+@keyframes fadeUpIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 a {
   color: var(--accent);
   text-decoration: none;
@@ -87,6 +98,29 @@ img {
 .hero {
   padding: 5rem 0 3rem;
   background: linear-gradient(135deg, #f9f5eb 0%, #efe4d0 100%);
+}
+
+.hero .container {
+  animation: fadeUpIn 0.8s ease both;
+}
+
+.hero h1,
+.hero-copy,
+.hero-actions {
+  opacity: 0;
+  animation: fadeUpIn 0.7s ease forwards;
+}
+
+.hero h1 {
+  animation-delay: 0.1s;
+}
+
+.hero-copy {
+  animation-delay: 0.25s;
+}
+
+.hero-actions {
+  animation-delay: 0.4s;
 }
 
 .eyebrow {
