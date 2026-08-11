@@ -12,6 +12,31 @@ This repository holds the official Jekyll version of the Clean Blog theme on Sta
 
 ## Installation & Setup
 
+### Running Locally
+
+To set up and run this Jekyll blog locally:
+
+1. **Ensure Ruby 3.0+** is installed. If system Ruby is older, install via Homebrew:
+   ```bash
+   brew install ruby
+   ```
+
+2. **Install dependencies** into a local project bundle (isolated from system gems):
+   ```bash
+   bundle config set --local path 'vendor/bundle'
+   bundle install
+   ```
+
+3. **Start the development server**:
+   ```bash
+   bundle exec jekyll serve
+   ```
+   The site will be available at: **http://127.0.0.1:4000/**
+
+4. **Auto-regeneration** is enabled by default — edit files and they rebuild automatically in the background.
+
+5. **Stop the server** with `Ctrl+C` in the terminal.
+
 ### Using RubyGems
 
 When installing the theme using RubyGems, demo images, posts, and pages are not included. Follow the instructions below for complete setup.
