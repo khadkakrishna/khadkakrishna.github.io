@@ -11,6 +11,7 @@
   --text: #000000;
   --text-secondary: #333333;
   --text-muted: #666666;
+  --heading: #000000;
   --border: #e5e5e5;
 
   /* Accent Color (Red) */
@@ -45,6 +46,7 @@
   --text: #e8e8e8;
   --text-secondary: #d0d0d0;
   --text-muted: #a0a0a0;
+  --heading: #ffffff;
   --border: #404040;
 
   /* Accent Color (Red) - unchanged */
@@ -247,6 +249,11 @@ img {
   margin: 0 0 0.75rem;
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.2;
+  color: var(--heading);
+}
+
+h2, h3, h4, h5, h6 {
+  color: var(--heading);
 }
 
 .hero-copy {
