@@ -34,6 +34,36 @@
   --gradient-hero: linear-gradient(135deg, var(--surface) 0%, var(--surface-light) 100%);
 }
 
+/* Dark Mode */
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Base Colors */
+  --surface: #1a1a1a;
+  --surface-light: #2a2a2a;
+  --text: #e8e8e8;
+  --text-muted: #a0a0a0;
+  --border: #404040;
+
+  /* Accent Color (Red) - unchanged */
+  --accent: #dc2626;
+  --accent-dark: #b91c1c;
+  --accent-light: #7f1d1d;
+  --accent-bg: #7f1d1d;
+
+  /* Interactive States */
+  --hover-bg: #2a2a2a;
+
+  /* Code Block */
+  --code-bg: #0f0f0f;
+  --code-text: #e8e8e8;
+
+  /* Shadows */
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  --shadow-hover: 0 14px 32px rgba(0, 0, 0, 0.4);
+  --shadow-accent: 0 8px 18px rgba(220, 38, 38, 0.3);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -97,12 +127,63 @@ img {
   color: var(--text);
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .site-nav ul {
   display: flex;
   gap: 0.6rem;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.theme-toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--hover-bg);
+  border-color: var(--accent);
+}
+
+.theme-toggle svg {
+  position: absolute;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.theme-toggle .icon-sun {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.theme-toggle .icon-moon {
+  opacity: 0;
+  transform: scale(0.8) rotate(-90deg);
+}
+
+[data-theme="dark"] .theme-toggle .icon-sun {
+  opacity: 0;
+  transform: scale(0.8) rotate(90deg);
+}
+
+[data-theme="dark"] .theme-toggle .icon-moon {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
 }
 
 .site-nav li a {
@@ -361,13 +442,24 @@ code {
 
 @media (max-width: 700px) {
   .site-nav {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 0.75rem;
+  }
+
+  .nav-right {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .site-nav ul {
     flex-wrap: wrap;
+    flex: 1;
+  }
+
+  .theme-toggle {
+    order: -1;
   }
 
   .hero {
