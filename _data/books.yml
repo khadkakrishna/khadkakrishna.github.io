@@ -1,0 +1,45 @@
+currently_reading:
+  - title: "AI Engineering"
+    author: "Chip Huyen"
+    image: "https://www.oreilly.com/covers/urn:orm:book:9781098166298/256w/"
+    url: "https://www.oreilly.com/library/view/ai-engineering/9781098166298/"
+  - title: "An Illustrated Guide to AI Agents"
+    author: "Maarten Grootendorst, Jay Alammar"
+    image: "https://www.oreilly.com/covers/urn:orm:book:9798341662681/256w/"
+    url: "https://www.oreilly.com/library/view/an-illustrated-guide/9798341662681/"
+
+recommendations:
+  - title: "Designing Data-Intensive Applications"
+    author: "Martin Kleppmann"
+    image: "https://www.oreilly.com/covers/urn:orm:book:9781098119058/256w/"
+    url: "https://www.oreilly.com/library/view/designing-data-intensive-applications/9781098119058/"
+
+  - title: "Clean Code"
+    author: "Robert C. Martin"
+    image: "https://images-na.ssl-images-amazon.com/images/P/0132350882.01.L.jpg"
+    url: "https://www.goodreads.com/book/show/3735293-clean-code"
+
+  - title: "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow"
+    author: "Aurélien Géron"
+    image: "https://www.oreilly.com/covers/urn:orm:book:9781098125967/256w/"
+    url: "https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/"
+
+  - title: "Data Engineering Design Patterns"
+    author: "Bartosz Konieczny"
+    image: "https://www.oreilly.com/covers/urn:orm:book:9781098165826/256w/"
+    url: "https://www.oreilly.com/library/view/data-engineering-design/9781098165826/"
+
+  - title: "Cracking the Coding Interview"
+    author: "Gayle Laakmann McDowell"
+    image: "https://images-na.ssl-images-amazon.com/images/P/0984782850.01.L.jpg"
+    url: "https://www.goodreads.com/book/show/12544648-cracking-the-coding-interview"
+
+  - title: "Learning SQL"
+    author: "Alan Beaulieu"
+    image: "https://www.oreilly.com/covers/urn:orm:book:9781492057604/256w/"
+    url: "https://www.oreilly.com/library/view/learning-sql-3rd/9781492057604/"
+ 
+  - title: "Fundamentals of Data Engineering"
+    author: "Joe Reis, Matt Housley"
+    image: "https://www.oreilly.com/covers/urn:orm:book:9781098108298/256w/"
+    url: "https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/"

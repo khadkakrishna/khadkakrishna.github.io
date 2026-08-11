@@ -18,6 +18,44 @@ layout: default
   </section> -->
 
   <section class="section-block">
+    <div class="section-heading section-heading--books">
+      <h2>Books I'm Reading & Recommendations</h2>
+    </div>
+    <div class="book-carousel">
+      <button class="carousel-btn carousel-btn-prev" onclick="scrollCarousel(event, -1)">‹</button>
+      <div class="book-track" id="booksCarousel">
+        {% for book in site.data.books.currently_reading %}
+        <a href="{{ book.url }}" target="_blank" rel="noopener noreferrer" class="book-card book-card--reading book-card-link">
+          <div class="book-badge">Currently Reading</div>
+          <div class="book-image-wrapper">
+            <img src="{{ book.image }}" alt="{{ book.title }}" class="book-image">
+          </div>
+          <div class="book-info">
+            <h4>{{ book.title }}</h4>
+            <p class="book-author">{{ book.author }}</p>
+          </div>
+        </a>
+        {% endfor %}
+        {% if site.data.books.currently_reading.size > 0 and site.data.books.recommendations.size > 0 %}
+        <div class="book-divider"></div>
+        {% endif %}
+        {% for book in site.data.books.recommendations limit: 7 | minus: site.data.books.currently_reading.size %}
+        <a href="{{ book.url }}" target="_blank" rel="noopener noreferrer" class="book-card book-card-link">
+          <div class="book-image-wrapper">
+            <img src="{{ book.image }}" alt="{{ book.title }}" class="book-image">
+          </div>
+          <div class="book-info">
+            <h4>{{ book.title }}</h4>
+            <p class="book-author">{{ book.author }}</p>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+      <button class="carousel-btn carousel-btn-next" onclick="scrollCarousel(event, 1)">›</button>
+    </div>
+  </section>
+
+  <section class="section-block">
     <div class="section-heading">
       <h2>Latest posts</h2>
       <a href="{{ '/posts' | relative_url }}">View all</a>
@@ -33,3 +71,14 @@ layout: default
     </div>
   </section>
 </main>
+
+<script>
+  function scrollCarousel(event, direction) {
+    const carousel = document.getElementById('booksCarousel');
+    const scrollAmount = 320; // book card width + gap
+    carousel.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
