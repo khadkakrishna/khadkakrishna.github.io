@@ -31,6 +31,9 @@
   --shadow-hover: 0 14px 32px rgba(0, 0, 0, 0.1);
   --shadow-accent: 0 8px 18px rgba(220, 38, 38, 0.16);
 
+  /* Header */
+  --header-bg: rgba(255, 255, 255, 0.95);
+
   /* Hero Section */
   --hero-bg: #f0f0f0;
   --hero-bg-accent: #e8e8e8;
@@ -63,6 +66,9 @@
   /* Code Block */
   --code-bg: #0f0f0f;
   --code-text: #e8e8e8;
+
+  /* Header */
+  --header-bg: rgba(26, 26, 26, 0.95);
 
   /* Hero Section */
   --hero-bg: #262626;
@@ -119,7 +125,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--header-bg);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(8px);
   color: var(--text);
