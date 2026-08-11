@@ -55,7 +55,8 @@ layout: default
         {% if site.data.books.currently_reading.size > 0 and site.data.books.recommendations.size > 0 %}
         <div class="book-divider"></div>
         {% endif %}
-        {% for book in site.data.books.recommendations limit: 7 | minus: site.data.books.currently_reading.size %}
+        {% assign recommended_limit = 7 | minus: site.data.books.currently_reading.size %}
+        {% for book in site.data.books.recommendations limit: recommended_limit %}
         <a href="{{ book.url }}" target="_blank" rel="noopener noreferrer" class="book-card book-card-link">
           <div class="book-image-wrapper">
             <img src="{{ book.image }}" alt="{{ book.title }}" class="book-image">
