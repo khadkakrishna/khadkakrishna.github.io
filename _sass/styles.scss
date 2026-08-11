@@ -1,12 +1,12 @@
 :root {
   color-scheme: light;
-  --bg: #fdfcf8;
+  --bg: #ffffff;
   --surface: #ffffff;
-  --text: #1f2937;
-  --muted: #5b6472;
-  --accent: #2563eb;
-  --border: #e8e2d6;
-  --shadow: 0 10px 30px rgba(31, 41, 55, 0.06);
+  --text: #000000;
+  --muted: #666666;
+  --accent: #dc2626;
+  --border: #e5e5e5;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 
 * {
@@ -90,14 +90,14 @@ img {
 }
 
 .site-nav li a:hover {
-  background: #f6efe4;
+  background: #f5f5f5;
   border-color: var(--border);
   text-decoration: none;
 }
 
 .hero {
   padding: 5rem 0 3rem;
-  background: linear-gradient(135deg, #f9f5eb 0%, #efe4d0 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
 }
 
 .hero .container {
@@ -164,12 +164,12 @@ img {
   border-radius: 999px;
   background: var(--accent);
   color: #fff;
-  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.16);
+  box-shadow: 0 8px 18px rgba(220, 38, 38, 0.16);
   transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .button:hover {
-  background: #1d4ed8;
+  background: #b91c1c;
   transform: translateY(-1px);
   text-decoration: none;
 }
@@ -181,7 +181,7 @@ img {
 }
 
 .button-secondary:hover {
-  background: #f3f7ff;
+  background: #fef2f2;
   text-decoration: none;
 }
 
@@ -225,14 +225,14 @@ img {
 
 .post-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 32px rgba(31, 41, 55, 0.1);
-  border-color: #d8cdb7;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.1);
+  border-color: #fecaca;
 }
 
 .home .post-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 32px rgba(31, 41, 55, 0.1);
-  border-color: #d8cdb7;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.1);
+  border-color: #fecaca;
 }
 
 .post-card h3 {
@@ -249,7 +249,7 @@ img {
 
 .page-header {
   padding: 3rem 0 1rem;
-  background: linear-gradient(135deg, #f9f5eb 0%, #efe4d0 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
   border-bottom: 1px solid var(--border);
 }
 
