@@ -2,6 +2,7 @@ _site
 .sass-cache
 node_modules
 Gemfile.lock
+vendor/bundle
 *.gem
 .DS_Store
 _drafts/
