@@ -18,6 +18,22 @@ layout: default
   </section> -->
 
   <section class="section-block">
+    <div class="section-heading">
+      <h2>Latest posts</h2>
+      <a href="{{ '/posts' | relative_url }}">View all</a>
+    </div>
+    <div class="post-list">
+      {% for post in site.posts limit: 5 %}
+      <article class="post-card">
+        <p class="post-meta">{{ post.date | date: '%B %d, %Y' }}</p>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{% if post.subtitle %}{{ post.subtitle }}{% else %}{{ post.excerpt | strip_html | truncatewords: 20 }}{% endif %}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="section-block">
     <div class="section-heading section-heading--books">
       <h2>Books I'm Reading & Recommendations</h2>
     </div>
@@ -52,22 +68,6 @@ layout: default
         {% endfor %}
       </div>
       <button class="carousel-btn carousel-btn-next" onclick="scrollCarousel(event, 1)">›</button>
-    </div>
-  </section>
-
-  <section class="section-block">
-    <div class="section-heading">
-      <h2>Latest posts</h2>
-      <a href="{{ '/posts' | relative_url }}">View all</a>
-    </div>
-    <div class="post-list">
-      {% for post in site.posts limit: 5 %}
-      <article class="post-card">
-        <p class="post-meta">{{ post.date | date: '%B %d, %Y' }}</p>
-        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        <p>{% if post.subtitle %}{{ post.subtitle }}{% else %}{{ post.excerpt | strip_html | truncatewords: 20 }}{% endif %}</p>
-      </article>
-      {% endfor %}
     </div>
   </section>
 </main>
