@@ -114,6 +114,12 @@ a {
 .post-content a,
 .page-content a {
   color: #2563eb;
+  transition: text-decoration 0.2s ease;
+}
+
+.post-content a:hover,
+.page-content a:hover {
+  text-decoration: underline;
 }
 
 [data-theme="dark"] .post-content a,
