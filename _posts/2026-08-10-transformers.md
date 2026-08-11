@@ -3,7 +3,6 @@ layout: post
 title: "Transformers"
 subtitle: "The attention-based architecture behind modern language models"
 date: 2026-08-10 10:45:13 -0400
-background: '/img/bg-post.jpg'
 tags:	deeplearning nlp machinelearning transformers python
 ---
 
