@@ -6,8 +6,6 @@ date: 2026-08-10 10:45:13 -0400
 tags:	deeplearning nlp machinelearning transformers python
 ---
 
-# Transformers
-
 The Transformer is a neural network architecture introduced in the 2017 paper *"Attention Is All You Need"* by Vaswani et al. It replaced recurrence and convolution with a mechanism called **self-attention**, allowing models to process entire sequences in parallel while still capturing long-range dependencies. Transformers are the foundation behind models like BERT, GPT, and most modern large language models.
 
 At a high level, a Transformer is built from a handful of core components:
