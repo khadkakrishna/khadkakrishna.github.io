@@ -6,10 +6,10 @@
   color-scheme: light;
 
   /* Base Colors */
-  --bg: #ffffff;
   --surface: #ffffff;
+  --surface-light: #f9f9f9;
   --text: #000000;
-  --muted: #666666;
+  --text-muted: #666666;
   --border: #e5e5e5;
 
   /* Accent Color (Red) */
@@ -18,18 +18,20 @@
   --accent-light: #fecaca;
   --accent-bg: #fef2f2;
 
-  /* Semantic Colors */
-  --nav-hover: #f5f5f5;
+  /* Interactive States */
+  --hover-bg: #f5f5f5;
+
+  /* Code Block */
   --code-bg: #111827;
   --code-text: #f9fafb;
 
-  /* Effects */
+  /* Shadows */
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   --shadow-hover: 0 14px 32px rgba(0, 0, 0, 0.1);
-  --accent-shadow: 0 8px 18px rgba(220, 38, 38, 0.16);
+  --shadow-accent: 0 8px 18px rgba(220, 38, 38, 0.16);
 
   /* Gradients */
-  --gradient-hero: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+  --gradient-hero: linear-gradient(135deg, var(--surface) 0%, var(--surface-light) 100%);
 }
 
 * {
@@ -43,7 +45,7 @@ body {
   flex-direction: column;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.7;
-  background: var(--bg);
+  background: var(--surface);
   color: var(--text);
 }
 
@@ -114,7 +116,7 @@ img {
 }
 
 .site-nav li a:hover {
-  background: var(--nav-hover);
+  background: var(--hover-bg);
   border-color: var(--border);
   text-decoration: none;
 }
@@ -169,7 +171,7 @@ img {
 .post-content p,
 .post-card p,
 .page-content p {
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 .hero-actions {
@@ -188,7 +190,7 @@ img {
   border-radius: 999px;
   background: var(--accent);
   color: #fff;
-  box-shadow: var(--accent-shadow);
+  box-shadow: var(--shadow-accent);
   transition: background 0.2s ease, transform 0.2s ease;
 }
 
@@ -266,7 +268,7 @@ img {
 
 .post-meta {
   font-size: 0.9rem;
-  color: var(--muted);
+  color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
@@ -315,7 +317,7 @@ code {
   padding: 1rem 0 2rem;
   border-top: 1px solid var(--border);
   background: var(--surface);
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 .footer-inner {
