@@ -13,33 +13,47 @@ recommendations:
     author: "Martin Kleppmann"
     image: "https://www.oreilly.com/covers/urn:orm:book:9781098119058/256w/"
     url: "https://www.oreilly.com/library/view/designing-data-intensive-applications/9781098119058/"
+    read: true
+    comment: "I really enjoyed reading this, one of the best books for data engineers."
 
   - title: "Clean Code"
     author: "Robert C. Martin"
     image: "https://images-na.ssl-images-amazon.com/images/P/0132350882.01.L.jpg"
     url: "https://www.goodreads.com/book/show/3735293-clean-code"
+    read: true
+    comment: "All that u need to know about writing maintainable code."
 
   - title: "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow"
     author: "Aurélien Géron"
     image: "https://www.oreilly.com/covers/urn:orm:book:9781098125967/256w/"
     url: "https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/"
+    read: true
+    comment: "One of the fundamental book I read when I started my data journey."
 
   - title: "Data Engineering Design Patterns"
     author: "Bartosz Konieczny"
     image: "https://www.oreilly.com/covers/urn:orm:book:9781098165826/256w/"
     url: "https://www.oreilly.com/library/view/data-engineering-design/9781098165826/"
+    read: true
+    comment: "Practical patterns for designing reliable data systems. A must-have reference for data engineers."
 
   - title: "Cracking the Coding Interview"
     author: "Gayle Laakmann McDowell"
     image: "https://images-na.ssl-images-amazon.com/images/P/0984782850.01.L.jpg"
     url: "https://www.goodreads.com/book/show/12544648-cracking-the-coding-interview"
+    read: true
+    comment: "Excellent prep for technical interviews, better than LeetCode :D"
 
   - title: "Learning SQL"
     author: "Alan Beaulieu"
     image: "https://www.oreilly.com/covers/urn:orm:book:9781492057604/256w/"
     url: "https://www.oreilly.com/library/view/learning-sql-3rd/9781492057604/"
- 
+    read: true
+    comment: "Helped to get the foundations right, no more afraid of windowing or complex CTEs/Subqueries"
+
   - title: "Fundamentals of Data Engineering"
     author: "Joe Reis, Matt Housley"
     image: "https://www.oreilly.com/covers/urn:orm:book:9781098108298/256w/"
     url: "https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/"
+    read: true
+    comment: "Foundational guide to modern data engineering, covers both technical and organizational aspects beautifully."

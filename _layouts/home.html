@@ -55,9 +55,8 @@ layout: default
         {% if site.data.books.currently_reading.size > 0 and site.data.books.recommendations.size > 0 %}
         <div class="book-divider"></div>
         {% endif %}
-        {% assign recommended_limit = 7 | minus: site.data.books.currently_reading.size %}
-        {% for book in site.data.books.recommendations limit: recommended_limit %}
-        <a href="{{ book.url }}" target="_blank" rel="noopener noreferrer" class="book-card book-card-link">
+        {% for book in site.data.books.recommendations %}
+        <a href="{{ book.url }}" target="_blank" rel="noopener noreferrer" class="book-card book-card-link {% if book.read %}book-card--read{% endif %}">
           <div class="book-image-wrapper">
             <img src="{{ book.image }}" alt="{{ book.title }}" class="book-image">
           </div>
@@ -65,6 +64,11 @@ layout: default
             <h4>{{ book.title }}</h4>
             <p class="book-author">{{ book.author }}</p>
           </div>
+          {% if book.read and book.comment %}
+          <div class="book-comment-overlay">
+            <p class="book-comment-text">"{{ book.comment }}"</p>
+          </div>
+          {% endif %}
         </a>
         {% endfor %}
       </div>
@@ -75,11 +79,9 @@ layout: default
 
 <script>
   function scrollCarousel(event, direction) {
+    event.preventDefault();
     const carousel = document.getElementById('booksCarousel');
     const scrollAmount = 320; // book card width + gap
-    carousel.scrollBy({
-      left: direction * scrollAmount,
-      behavior: 'smooth'
-    });
+    carousel.scrollLeft += direction * scrollAmount;
   }
 </script>

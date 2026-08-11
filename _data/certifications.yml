@@ -1,0 +1,75 @@
+- title: "Certified Kubernetes Application Developer"
+  issuer: "Kubernetes (Official)"
+  issued: "Apr 2026"
+  credential_id: "6bc5ee42-fb41-4bae-9cce-f2f172fdd214"
+  url: "https://www.credly.com/badges/6bc5ee42-fb41-4bae-9cce-f2f172fdd214/public_url"
+  logo: "https://images.credly.com/size/340x340/images/cc8adc83-1dc6-4d57-8e20-22171247e052/blob"
+  skills: ["Kubernetes", "Docker"]
+
+- title: "Databricks Certified Generative AI Engineer Associate"
+  issuer: "Databricks"
+  issued: "Jan 2026"
+  credential_id: "c055b372-cbb4-45f1-b030-5661cb894f0c"
+  url: ""
+  logo: "https://az-icons.com/export/icons/d180faa9ddc77cb9e841ff02998e5e21.svg"
+  skills: ["Large Language Models (LLM)", "Generative AI"]
+
+- title: "Databricks Certified Data Analyst Associate"
+  issuer: "Databricks"
+  issued: "Oct 2025"
+  expires: "Oct 2027"
+  credential_id: "162521112"
+  url: "https://credentials.databricks.com/c055b372-cbb4-45f1-b030-5661cb894f0c"
+  logo: "https://az-icons.com/export/icons/d180faa9ddc77cb9e841ff02998e5e21.svg"
+  skills: ["Databricks", "SQL"]
+
+- title: "Databricks Certified Associate Developer for Apache Spark"
+  issuer: "Databricks"
+  issued: "Aug 2025"
+  credential_id: "158808804"
+  url: "https://credentials.databricks.com/9711adfa-83ef-4fd4-8889-2c8003f990a3"
+  logo: "https://az-icons.com/export/icons/d180faa9ddc77cb9e841ff02998e5e21.svg"
+  skills: ["Apache Spark", "Databricks"]
+
+- title: "Databricks Certified Data Engineer Professional"
+  issuer: "Databricks"
+  issued: "Nov 2024"
+  expires: "Nov 2026"
+  credential_id: "122175271"
+  url: "https://credentials.databricks.com/fe8ef499-ac4d-4b89-a90b-2baae6430cfc"
+  logo: "https://az-icons.com/export/icons/d180faa9ddc77cb9e841ff02998e5e21.svg"
+  skills: ["Databricks"]
+
+- title: "AWS Certified Solutions Architect Associate"
+  issuer: "Amazon Web Services (AWS)"
+  issued: "Apr 2024"
+  credential_id: "d3186ec1af1547e2a5ca1c9b705f49ac"
+  url: "https://www.credly.com/badges/3dece20b-a5c4-4616-ac89-23b82bdd1812/public_url"
+  logo: "https://images.seeklogo.com/logo-png/31/1/amazon-web-services-aws-logo-png_seeklogo-319188.png"
+  skills: ["Amazon Web Services (AWS)", "Solution Architecture"]
+
+- title: "HashiCorp Certified: Terraform Associate (003)"
+  issuer: "HashiCorp"
+  issued: "Jun 2023"
+  expires: "Jul 2025"
+  expired: true
+  credential_id: "0078b05f-8451-4211-9a8e-55beaaa35c94"
+  url: "https://www.credly.com/badges/0078b05f-8451-4211-9a8e-55beaaa35c94/public_url"
+  logo: "https://images.credly.com/size/340x340/images/0dc62494-dc94-469a-83af-e35309f27356/blob"
+  skills: ["Infrastructure as Code (IaC)", "Infrastructure Management"]
+
+- title: "AWS Certified Cloud Practitioner"
+  issuer: "Amazon Web Services (AWS)"
+  issued: "May 2023"
+  credential_id: "CP6QFTEC021Q1091"
+  url: "https://www.credly.com/badges/6228bdbe-9494-4554-aa6f-102bbd915fc8"
+  logo: "https://images.seeklogo.com/logo-png/31/1/amazon-web-services-aws-logo-png_seeklogo-319188.png"
+  skills: ["Cloud Computing", "Cloud Applications"]
+
+- title: "PCAP – Certified Associate in Python Programming"
+  issuer: "Python Institute"
+  issued: "Jan 2022"
+  credential_id: "mJFn.mKYa.do7f"
+  url: "https://www.credly.com/badges/0b2bf85b-60ca-4058-9634-2ee8e941159f/public_url"
+  logo: "https://images.credly.com/size/340x340/images/4e248e82-9e87-4a63-9263-250fafe5fb1f/image.png"
+  skills: ["Object-Oriented Programming (OOP)", "Python"]
