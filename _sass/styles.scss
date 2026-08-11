@@ -127,6 +127,18 @@ a {
   color: #60a5fa;
 }
 
+.post-content ul,
+.post-content ol,
+.page-content ul,
+.page-content ol {
+  color: var(--text);
+}
+
+.post-content li,
+.page-content li {
+  color: var(--text);
+}
+
 img {
   max-width: 100%;
   display: block;
