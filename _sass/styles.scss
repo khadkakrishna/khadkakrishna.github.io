@@ -377,6 +377,8 @@ img {
   padding: 3rem 0 1rem;
   background: var(--gradient-hero);
   border-bottom: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  padding-left: calc(3rem - 4px);
 }
 
 .page-content {
