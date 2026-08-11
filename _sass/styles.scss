@@ -111,6 +111,16 @@ a {
   text-decoration: none;
 }
 
+.post-content a,
+.page-content a {
+  color: #2563eb;
+}
+
+[data-theme="dark"] .post-content a,
+[data-theme="dark"] .page-content a {
+  color: #60a5fa;
+}
+
 img {
   max-width: 100%;
   display: block;
