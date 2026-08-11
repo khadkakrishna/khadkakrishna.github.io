@@ -31,8 +31,12 @@
   --shadow-hover: 0 14px 32px rgba(0, 0, 0, 0.1);
   --shadow-accent: 0 8px 18px rgba(220, 38, 38, 0.16);
 
+  /* Hero Section */
+  --hero-bg: #f5f3f0;
+  --hero-bg-accent: #efe8e0;
+
   /* Gradients */
-  --gradient-hero: linear-gradient(135deg, var(--surface) 0%, var(--surface-light) 100%);
+  --gradient-hero: linear-gradient(135deg, var(--hero-bg) 0%, var(--hero-bg-accent) 100%);
 }
 
 /* Dark Mode */
@@ -59,6 +63,10 @@
   /* Code Block */
   --code-bg: #0f0f0f;
   --code-text: #e8e8e8;
+
+  /* Hero Section */
+  --hero-bg: #262626;
+  --hero-bg-accent: #1f1f1f;
 
   /* Shadows */
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
