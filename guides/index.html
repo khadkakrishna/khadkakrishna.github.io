@@ -1,0 +1,63 @@
+---
+layout: page
+title: Guides
+description: In-depth study guides and reference material on data engineering, SQL, and more.
+permalink: /guides/
+---
+
+<div class="guide-list">
+
+  <article class="guide-card">
+    <p class="post-meta">SQL · Interview Prep</p>
+    <h3><a href="{{ '/guides/sql-study-guide' | relative_url }}" target="_blank" rel="noopener noreferrer">SQL MCQs — Comprehensive Reference</a></h3>
+    <p>A comprehensive collection of SQL multiple-choice questions covering fundamentals, joins, aggregations, window functions, and more. Great for interview prep and self-assessment.</p>
+  </article>
+
+</div>
+
+<style>
+  .guide-list {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .guide-card {
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.25rem;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  .guide-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--accent-light);
+  }
+
+  .guide-card h3 {
+    margin: 0.25rem 0 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .guide-card h3 a,
+  .guide-card h3 a:hover,
+  [data-theme="dark"] .guide-card h3 a,
+  [data-theme="dark"] .guide-card h3 a:hover {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .guide-card h3 a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+</style>
